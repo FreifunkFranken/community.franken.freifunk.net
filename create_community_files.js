@@ -9,7 +9,13 @@ var client = new Client();
 var routerlist = null;
 var routers = null;
 
-var path = './cache_routerlist.json';
+var options = {
+	netmonUrl: "https://netmon.freifunk-franken.de/api/rest/routerlist/?limit=500",
+	outputDir: '../freifunkfranken-community/',
+	outputPrefix: '',
+	cacheRouterlistFile: './cache.routerlist.json',
+	cacheMaxAge: 60,
+};
 
 var metacommunity = {
 	"id" : "franken",
@@ -48,8 +54,20 @@ var metacommunity = {
 };
 
 var communities = [ {
+	"id" : "nuernberg",
+	"radius" : 10,
+	"data" : {
+		"name" : "Freifunk Nürnberg",
+		"metacommunity" : "Freifunk Franken",
+		"location" : {
+			"city" : "Nürnberg",
+			"lat" : 49.448856931202,
+			"lon" : 11.082108258271
+		}
+	}
+}, {
 	"id" : "fuerth",
-	"radius" : 4, // community radius in km
+	"radius" : 4,
 	"data" : {
 		"name" : "Freifunk Fürth",
 		"metacommunity" : "Freifunk Franken",
@@ -61,7 +79,7 @@ var communities = [ {
 	}
 }, {
 	"id" : "unfinden",
-	"radius" : 10, // community radius in km
+	"radius" : 10,
 	"data" : {
 		"name" : "Freifunk Unfinden",
 		"metacommunity" : "Freifunk Franken",
@@ -69,6 +87,66 @@ var communities = [ {
 			"city" : "Unfinden",
 			"lat" : 50.093555895082,
 			"lon" : 10.568013390003
+		}
+	}
+}, {
+	"id" : "erlangen",
+	"radius" : 10,
+	"data" : {
+		"name" : "Freifunk Erlangen",
+		"metacommunity" : "Freifunk Franken",
+		"location" : {
+			"city" : "Erlangen",
+			"lat" : 49.6005981,
+			"lon" : 11.0019221
+		}
+	}
+}, {
+	"id" : "wuerzburg",
+	"radius" : 20,
+	"data" : {
+		"name" : "Freifunk Würzburg",
+		"metacommunity" : "Freifunk Franken",
+		"location" : {
+			"city" : "Würzburg",
+			"lat" : 49.79688,
+			"lon" : 9.93489
+		}
+	}
+}, {
+	"id" : "ansbach",
+	"radius" : 10,
+	"data" : {
+		"name" : "Freifunk Ansbach",
+		"metacommunity" : "Freifunk Franken",
+		"location" : {
+			"city" : "Ansbach",
+			"lat" : 49.300833,
+			"lon" : 10.571667
+		}
+	}
+}, {
+	"id" : "haag",
+	"radius" : 10,
+	"data" : {
+		"name" : "Freifunk Haag/Neuendettelsau",
+		"metacommunity" : "Freifunk Franken",
+		"location" : {
+			"city" : "Haag",
+			"lat" : 49.295278,
+			"lon" : 10.816111
+		}
+	}
+}, {
+	"id" : "regensburg",
+	"radius" : 20,
+	"data" : {
+		"name" : "Freifunk Regensburg",
+		"metacommunity" : "Freifunk Franken",
+		"location" : {
+			"city" : "Regensburg",
+			"lat" : 49.031974,
+			"lon" : 12.116186
 		}
 	}
 } ];
@@ -93,7 +171,7 @@ function saveCommunityData(data, output_filename) {
 }
 
 function updateCommunity(community, count) {
-	var output_filename = "freifunk" + community.id + ".json";
+	var output_filename = options.outputDir + options.outputPrefix + community.id + ".json";
 	if (!community.data.state) {
 		community.data.state = {};
 	}
@@ -120,16 +198,20 @@ function getDistance(p1, p2) {
 	return d;
 }
 
-function updateCommunities() {
+function updateCommunities(data) {
 	var count = 0;
-	for (var n = 0; n < routers.length; n = n + 1) {
-		if (routers[n].statusdata[0].status[0] !== "online") {
-			continue;
-		}
-		count = count + 1;
-	}
-	// write meta-community file
-	updateCommunity(metacommunity, count);
+	routerlist = data.netmon_response.routerlist;
+	routers = data.netmon_response.routerlist[0].router;
+	
+	
+//	for (var n = 0; n < routers.length; n = n + 1) {
+//		if (routers[n].statusdata[0].status[0] !== "online") {
+//			continue;
+//		}
+//		count = count + 1;
+//	}
+//	// write meta-community file
+//	updateCommunity(metacommunity, count);
 
 	// write community files
 	var length = communities.length;
@@ -139,9 +221,9 @@ function updateCommunities() {
 		winston.info("Routers in " + communities[i].data.name + " (radius: " + communities[i].radius + " km): ");
 		winston.info("-------------------------------------------------------------");
 		for (var j = 0; j < routers.length; j = j + 1) {
-//			if (routers[j].statusdata[0].status !== "online") {
-//				continue;
-//			}
+			if (routers[j].statusdata[0].status[0] !== "online") {
+				continue;
+			}
 			
 			var distance = getDistance({
 				"lat" : parseFloat(routers[j].latitude),
@@ -153,57 +235,66 @@ function updateCommunities() {
 				count = count + 1;
 			}
 		}
-
 		community.id = communities[i].id;
 		community.data = extend(communities[i].data, metacommunity.data);
 		updateCommunity(community, count);
 	}
 }
 
-function processCommunityData(data) {
-	routerlist = data.netmon_response.routerlist;
-	routers = data.netmon_response.routerlist[0].router;
-	updateCommunities();
+function exec(instructions) {
+	var terminal = require('child_process').spawn('bash');
+	terminal.stdout.on('data', function (data) {
+		console.log("" + data);
+	});
+	terminal.on('exit', function (code) {
+		console.log("-------------------------------------------------------");
+		console.log("DONE");
+	});
+	
+	for (var i=0; i<instructions.length; i=i+1) {
+		console.log('\n' + instructions[i]);
+		console.log("-------------------------------------------------------");
+		terminal.stdin.write(instructions[i] + "\n");
+	}
+	terminal.stdin.end();
 }
 
 
+function run() {
+	fs.stat(options.cacheRouterlistFile, function(err, stats) {
+		var minutesDiff = -1;
+		if (!err) {
+			var mtime = stats.mtime;
+			var fileDate = moment(mtime);
+			var now = moment();
+			minutesDiff = now.diff(fileDate, 'minutes');
+			winston.info("Age of local routerlist: " + minutesDiff + " minutes\n");
+		}
+		if (err || (minutesDiff > options.cacheMaxAge)) {
+			winston.info("Loading routerlist from netmon...");
+			//TODO split into multible requests
+			client.get(options.netmonUrl,
+				function(data, response) {
+					winston.info("saving data to file " + options.cacheRouterlistFile + "\n");
+					fs.writeFile(options.cacheRouterlistFile, JSON.stringify(data, null, 4), function(err) {
+						if (err) {
+							winston.error(err);
+						}
+					});
+					updateCommunities(data);
+				}
+			);
+		} else  {
+			winston.info("Loading local routerlist...");
+			fs.readFile(options.cacheRouterlistFile, 'utf8', function read(err, data) {
+				if (err) {
+					throw err;
+				}
+				updateCommunities(JSON.parse(data));
+			});
+		}
+	});
+}
 
-fs.stat(path, function(err, stats) {
-	var minutesDiff = 9999999;
-	if (!err) {
-		var mtime = stats.mtime;
-		var fileDate = moment(mtime);
-		var now = moment();
-		minutesDiff = now.diff(fileDate, 'minutes');
-		winston.info("Age of local routerlist: " + minutesDiff + " minutes\n");
-	}
-
-	if (minutesDiff > 60) {
-		winston.info("Loading routerlist from netmon...");
-		client.get("https://netmon.freifunk-franken.de/api/rest/routerlist/?limit=500",
-			function(data, response) {
-				winston.info("saving data to file " + path + "\n");
-				fs.writeFile(path, JSON.stringify(data, null, 4), function(err) {
-					if (err) {
-						winston.error(err);
-					}
-				});
-				processCommunityData(data);
-			}
-		);
-	} else  {
-		winston.info("Loading local routerlist...");
-		fs.readFile(path, 'utf8', function read(err, data) {
-			if (err) {
-				throw err;
-			}
-			processCommunityData(JSON.parse(data));
-		});
-	}
-});
-
-
-
-
-
+run();
 
