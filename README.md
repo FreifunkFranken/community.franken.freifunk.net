@@ -1,4 +1,8 @@
 community.franken.freifunk.net
 ==============================
 
-update community files
+```
+cd ../freifunkfranken-community/
+git commit -a -m "updated via netmon.freiunk-franken.de"
+git push origin master
+```
