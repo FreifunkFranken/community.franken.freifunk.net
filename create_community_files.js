@@ -3,11 +3,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 var fs = require('fs');
 var winston = require('winston');
 var moment = require('moment');
-var Client = require('node-rest-client').Client;
-var client = new Client();
-
-var routerlist = null;
-var routers = null;
+var restClient = require('node-rest-client').Client;
 
 var options = {
 	netmonUrl: "https://netmon.freifunk-franken.de/api/rest/routerlist/?limit=500",
@@ -15,8 +11,12 @@ var options = {
 	outputDir: '../freifunkfranken-community/',
 	outputPrefix: '',
 	cacheRouterlistFile: './cache.routerlist.json',
-	cacheMaxAge: 60,
+	cacheMaxAge: 60, //in Minutes
 };
+
+var client = new restClient();
+var routerlist = null;
+var routers = null;
 
 //gets loaded from file
 var metacommunity = null;
