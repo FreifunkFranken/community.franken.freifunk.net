@@ -5,7 +5,7 @@
 			"name" : "Freifunk Franken",
 			"url" : "http://freifunk-franken.de",
 			"state" : {
-				"message" : "Jeder darf mitmachen!"
+				"message" : "growing..."
 			},
 			"location" : {
 				"city" : "Nürnberg",
@@ -31,7 +31,7 @@
 				"updatemode" : "manual over ssh",
 				"vpn" : "fastd"
 			},
-			"api" : "0.1"
+			"api" : "0.2.1"
 		}
 	},
 
@@ -45,7 +45,12 @@
 				"city" : "Nürnberg",
 				"lat" : 49.448856931202,
 				"lon" : 11.082108258271
-			}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.45582&lon=11.08036&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}, {
 		"id" : "fuerth",
@@ -57,7 +62,12 @@
 				"city" : "Fürth",
 				"lat" : 49.47833,
 				"lon" : 10.99027
-			}
+			},
+			"nodeMaps" : [{
+				"url:" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.47703&lon=10.96743&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}, {
 		"id" : "unfinden",
@@ -69,7 +79,12 @@
 				"city" : "Unfinden",
 				"lat" : 50.093555895082,
 				"lon" : 10.568013390003
-			}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=17&lat=50.09241&lon=10.56942&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}, {
 		"id" : "erlangen",
@@ -81,7 +96,12 @@
 				"city" : "Erlangen",
 				"lat" : 49.6005981,
 				"lon" : 11.0019221
-			}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}, {
 		"id" : "wuerzburg",
@@ -93,7 +113,12 @@
 				"city" : "Würzburg",
 				"lat" : 49.79688,
 				"lon" : 9.93489
-			}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.78524&lon=9.92406&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}, {
 		"id" : "ansbach",
@@ -105,19 +130,30 @@
 				"city" : "Ansbach",
 				"lat" : 49.300833,
 				"lon" : 10.571667
-			}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=14&lat=49.30233&lon=10.57034&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}, {
 		"id" : "haag",
 		"radius" : 10,
 		"data" : {
 			"name" : "Freifunk Haag/Neuendettelsau",
+			"url" : "https://netmon.freifunk-franken.de/map.php?zoom=14&lat=49.28865&lon=10.79837&layers=B0000TTTTTT",
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Haag",
 				"lat" : 49.295278,
 				"lon" : 10.816111
-			}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}, {
 		"id" : "regensburg",
@@ -129,7 +165,12 @@
 				"city" : "Regensburg",
 				"lat" : 49.031974,
 				"lon" : 12.116186
-			}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
 		}
 	}]
 }
