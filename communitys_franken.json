@@ -50,7 +50,7 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.45582&lon=11.08036&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}, {
 		"id" : "fuerth",
@@ -67,7 +67,7 @@
 				"url:" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.47703&lon=10.96743&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}, {
 		"id" : "unfinden",
@@ -84,7 +84,7 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=17&lat=50.09241&lon=10.56942&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}, {
 		"id" : "erlangen",
@@ -101,7 +101,7 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}, {
 		"id" : "wuerzburg",
@@ -118,7 +118,7 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.78524&lon=9.92406&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}, {
 		"id" : "ansbach",
@@ -135,7 +135,7 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=14&lat=49.30233&lon=10.57034&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}, {
 		"id" : "haag",
@@ -153,7 +153,7 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}, {
 		"id" : "regensburg",
@@ -170,7 +170,7 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}],
+			}]
 		}
 	}]
 }
