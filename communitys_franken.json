@@ -26,7 +26,7 @@
 					"url" : "https://dev.freifunk-franken.de/firmware/",
 					"name" : "Freifunk-Franken Firmware"
 				},
-				"routing" : "BATMAN",
+				"routing" : "B.A.T.M.A.N advanced",
 				"topodata" : "https://netmon.freifunk-franken.de/batman.png",
 				"updatemode" : "manual over ssh",
 				"vpn" : "fastd"
