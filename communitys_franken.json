@@ -70,10 +70,10 @@
 			}]
 		}
 	}, {
-		"id" : "unfinden",
+		"id" : "hassberge",
 		"radius" : 10,
 		"data" : {
-			"name" : "Freifunk Unfinden",
+			"name" : "Freifunk Haßberge",
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Unfinden",
