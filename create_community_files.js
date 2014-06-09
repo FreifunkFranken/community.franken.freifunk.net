@@ -26,6 +26,8 @@ function extend(destination, source) {
 	for ( var property in source) {
 		if (!destination[property]) {
 			destination[property] = source[property];
+		} else if (destination[property] instanceof Array && source[property] instanceof Array) {
+			Array.prototype.push.apply(destination[property], source[property]);
 		}
 	}
 	return destination;

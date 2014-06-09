@@ -12,12 +12,17 @@
 				"lat" : 49.448856931202,
 				"lon" : 11.082108258271
 			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/routerlist.php",
+				"technicalType" : "netmon",
+				"mapType" : "list/status"
+			}],
 			"contact" : {
 				"email" : "fragen@freifunk-franken.de",
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
 				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
 				"phone" : "+49 9101 7018607",
-				"twitter" : "FreifunkFranken"
+				"twitter" : "@FreifunkFranken"
 			},
 			"techDetails" : {
 				"stoererhaftung" : "VPN nach Rumänien und zum Freie Netze e.V.",
@@ -26,12 +31,16 @@
 					"url" : "https://dev.freifunk-franken.de/firmware/",
 					"name" : "Freifunk-Franken Firmware"
 				},
-				"routing" : "B.A.T.M.A.N advanced",
+				"tld": {
+					"domainname": "fff"
+				},
+				"routing" : "BATMAN",
+				"splashpage": "none",
 				"topodata" : "https://netmon.freifunk-franken.de/batman.png",
 				"updatemode" : "manual over ssh",
 				"vpn" : "fastd"
 			},
-			"api" : "0.2.1"
+			"api" : "0.3.1"
 		}
 	},
 
