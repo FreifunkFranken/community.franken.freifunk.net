@@ -5,10 +5,16 @@
 			"name" : "Freifunk Franken",
 			"url" : "http://freifunk-franken.de",
 			"state" : {
-				"message" : "growing..."
+				"focus": [
+					"infrastructure/backbone",
+					 "Public Free Wifi",
+					"Local services and content",
+					"Free internet access"
+				]
 			},
 			"location" : {
 				"city" : "Nürnberg",
+				"country": "DE",
 				"lat" : 49.448856931202,
 				"lon" : 11.082108258271
 			},
@@ -34,13 +40,19 @@
 				"tld": {
 					"domainname": "fff"
 				},
-				"routing" : "BATMAN",
-				"splashpage": "none",
-				"topodata" : "https://netmon.freifunk-franken.de/batman.png",
-				"updatemode" : "manual over ssh",
-				"vpn" : "fastd"
+				"routing": [
+					"batman-adv",
+					"OLSR"
+				],
+				"updatemode": [
+					"none"
+				],
+				"legals": [
+					"vpnnational",
+					"vpninternational"
+				]
 			},
-			"api" : "0.3.1"
+			"api" : "0.4.1"
 		}
 	},
 
