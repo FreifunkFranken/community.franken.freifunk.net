@@ -31,21 +31,16 @@
 				"twitter" : "@FreifunkFranken"
 			},
 			"techDetails" : {
-				"stoererhaftung" : "VPN nach Rumänien und zum Freie Netze e.V.",
-				"bootstrap" : "http://freifunk-franken.de/checkliste_routerinstallation",
 				"firmware" : {
 					"url" : "https://dev.freifunk-franken.de/firmware/",
 					"name" : "Freifunk-Franken Firmware"
-				},
-				"tld": {
-					"domainname": "fff"
 				},
 				"routing": [
 					"batman-adv",
 					"OLSR"
 				],
 				"updatemode": [
-					"none"
+					"manual"
 				],
 				"legals": [
 					"vpnnational",
