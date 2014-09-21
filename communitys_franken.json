@@ -188,22 +188,5 @@
 				"mapType" : "geographical"
 			}]
 		}
-	}, {
-		"id" : "rothenburg",
-		"radius" : 10,
-		"data" : {
-			"name" : "Freifunk Rothenburg",
-			"metacommunity" : "Freifunk Franken",
-			"location" : {
-				"city" : "Rothenburg ob der Tauber",
-				"lat" : 49.3658143,
-				"lon" : 10.1625091
-			},
-			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=14&lat=49.3754&lon=10.18571&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
-				"mapType" : "geographical"
-			}]
-		}
 	}]
 }
