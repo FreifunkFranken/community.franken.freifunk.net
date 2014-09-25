@@ -7,8 +7,7 @@
 			"state" : {
 				"focus": [
 					"infrastructure/backbone",
-					 "Public Free Wifi",
-					"Local services and content",
+					"Public Free Wifi",
 					"Free internet access"
 				]
 			},
@@ -28,12 +27,14 @@
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
 				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
 				"phone" : "+49 9101 7018607",
+				"irc": "irc://irc.freenode.net/#freifunkfranken",
 				"twitter" : "@FreifunkFranken"
 			},
 			"techDetails" : {
 				"firmware" : {
+					"name" : "Freifunk-Franken Firmware",
 					"url" : "https://dev.freifunk-franken.de/firmware/",
-					"name" : "Freifunk-Franken Firmware"
+					"docs": "https://wiki.freifunk-franken.de/w/Portal:Firmware"
 				},
 				"routing": [
 					"batman-adv",
@@ -47,7 +48,7 @@
 					"vpninternational"
 				]
 			},
-			"api" : "0.4.1"
+			"api" : "0.4.3"
 		}
 	},
 
