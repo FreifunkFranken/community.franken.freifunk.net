@@ -30,6 +30,14 @@
 				"irc": "irc://irc.freenode.net/#freifunkfranken",
 				"twitter" : "@FreifunkFranken"
 			},
+			"support": {
+				"donations": {
+					"campaigns": [{
+						"provider": "betterplace",
+						"projectid": "14713"
+					}]
+				}
+			},
 			"techDetails" : {
 				"firmware" : {
 					"name" : "Freifunk-Franken Firmware",
