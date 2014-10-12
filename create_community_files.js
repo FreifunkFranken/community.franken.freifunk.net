@@ -76,15 +76,16 @@ function updateCommunities(data) {
 	routerlist = data.netmon_response.routerlist;
 	routers = data.netmon_response.routerlist[0].router;
 	
-	
-//	for (var n = 0; n < routers.length; n = n + 1) {
-//		if (routers[n].statusdata[0].status[0] !== "online") {
-//			continue;
-//		}
-//		count = count + 1;
-//	}
-//	// write meta-community file
-//	updateCommunity(metacommunity, count);
+	/*
+	for (var n = 0; n < routers.length; n = n + 1) {
+		if (routers[n].statusdata[0].status[0] !== "online") {
+			continue;
+		}
+		count = count + 1;
+	}
+	// write meta-community file
+	updateCommunity(metacommunity, count);
+	*/
 
 	// write community files
 	var length = communities.length;

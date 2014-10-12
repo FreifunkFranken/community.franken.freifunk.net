@@ -56,11 +56,28 @@
 					"vpninternational"
 				]
 			},
-			"api" : "0.4.3"
+			"api" : "0.4.4"
 		}
 	},
 
 	"communities":  [{
+		"id" : "franken",
+		"radius" : 0,
+		"data" : {
+			"name" : "Freifunk Franken",
+			"metacommunity" : true,
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
+			"timeline": [{
+				"description": "Erste Mail auf der Mailingliste Freifunk-Franken",
+				"timestamp": "2009-02-27",
+				"url": "http://lists.freifunk.net/pipermail/franken-freifunk.net/2009-February/000000.html"
+			}]
+		}
+	}, {
 		"id" : "nuernberg",
 		"radius" : 10,
 		"data" : {
@@ -92,6 +109,11 @@
 				"url:" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.47703&lon=10.96743&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
+			}],
+			"timeline": [{
+				"description": "Einrichten der Seite Freifunk Fürth auf wiki.freifunk.net",
+				"timestamp": "2008-05-29",
+				"url": "http://lists.freifunk.net/pipermail/franken-freifunk.net/2009-February/000000.html"
 			}]
 		}
 	}, {
@@ -126,6 +148,11 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
+			}],
+			"timeline": [{
+				"description": "Einrichten der Seite Freifunk_Erlangen auf wiki.freifunk.net",
+				"timestamp": "2008-09-05",
+				"url": "http://wiki.freifunk.net/index.php?title=Freifunk_Erlangen&oldid=4791"
 			}]
 		}
 	}, {
