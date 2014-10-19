@@ -61,23 +61,6 @@
 	},
 
 	"communities":  [{
-		"id" : "franken",
-		"radius" : 0,
-		"data" : {
-			"name" : "Freifunk Franken",
-			"metacommunity" : true,
-			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php",
-				"technicalType" : "netmon",
-				"mapType" : "geographical"
-			}],
-			"timeline": [{
-				"description": "Erste Mail auf der Mailingliste Freifunk-Franken",
-				"timestamp": "2009-02-27",
-				"url": "http://lists.freifunk.net/pipermail/franken-freifunk.net/2009-February/000000.html"
-			}]
-		}
-	}, {
 		"id" : "nuernberg",
 		"radius" : 10,
 		"data" : {
