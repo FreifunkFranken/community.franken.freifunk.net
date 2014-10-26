@@ -190,22 +190,5 @@
 				"mapType" : "geographical"
 			}]
 		}
-	}, {
-		"id" : "regensburg",
-		"radius" : 20,
-		"data" : {
-			"name" : "Freifunk Regensburg",
-			"metacommunity" : "Freifunk Franken",
-			"location" : {
-				"city" : "Regensburg",
-				"lat" : 49.031974,
-				"lon" : 12.116186
-			},
-			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
-				"mapType" : "geographical"
-			}]
-		}
 	}]
 }
