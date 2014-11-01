@@ -1,18 +1,19 @@
 #!/bin/bash
 
-# set git user
-git config user.name "NetmonUpdateScript"
+BASEDIR=$(dirname $0)
 
-# update all repositories
-cd ../freifunkfranken-community/
-git pull
-cd ../community.franken.freifunk.net/
+# update community repository
+cd ${BASEDIR}/../freifunkfranken-community/
 git pull
 
 # get all nodes from netmon and update the community files
-node ./create_community_files.js
+cd ${BASEDIR}
+git config user.name "NetmonUpdateScript"
+git pull
+node create_community_files.js
 
 # update the github repository with the new data
-cd ../freifunkfranken-community/
+cd ${BASEDIR}/../freifunkfranken-community/
 git commit -a -m "updated from netmon"
 git push origin master
+
