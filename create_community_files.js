@@ -11,7 +11,7 @@ var options = {
 	outputDir: '../freifunkfranken-community/',
 	outputPrefix: '',
 	cacheRouterlistFile: './cache.routerlist.json',
-	cacheMaxAge: 60, //in Minutes
+	cacheMaxAge: 50, //in Minutes
 };
 
 var client = new restClient();
