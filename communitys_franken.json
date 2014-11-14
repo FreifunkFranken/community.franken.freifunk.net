@@ -155,40 +155,5 @@
 				"mapType" : "geographical"
 			}]
 		}
-	}, {
-		"id" : "ansbach",
-		"radius" : 10,
-		"data" : {
-			"name" : "Freifunk Ansbach",
-			"metacommunity" : "Freifunk Franken",
-			"location" : {
-				"city" : "Ansbach",
-				"lat" : 49.300833,
-				"lon" : 10.571667
-			},
-			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=14&lat=49.30233&lon=10.57034&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
-				"mapType" : "geographical"
-			}]
-		}
-	}, {
-		"id" : "haag",
-		"radius" : 10,
-		"data" : {
-			"name" : "Freifunk Haag/Neuendettelsau",
-			"url" : "https://netmon.freifunk-franken.de/map.php?zoom=14&lat=49.28865&lon=10.79837&layers=B0000TTTTTT",
-			"metacommunity" : "Freifunk Franken",
-			"location" : {
-				"city" : "Haag",
-				"lat" : 49.295278,
-				"lon" : 10.816111
-			},
-			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
-				"mapType" : "geographical"
-			}]
-		}
 	}]
 }
