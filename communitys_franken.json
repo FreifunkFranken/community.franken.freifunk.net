@@ -62,7 +62,7 @@
 
 	"communities":  [{
 		"id" : "nuernberg",
-		"radius" : 10,
+		"radius" : 6,
 		"data" : {
 			"name" : "Freifunk Nürnberg",
 			"metacommunity" : "Freifunk Franken",
@@ -79,7 +79,7 @@
 		}
 	}, {
 		"id" : "fuerth",
-		"radius" : 4,
+		"radius" : 3.4,
 		"data" : {
 			"name" : "Freifunk Fürth",
 			"metacommunity" : "Freifunk Franken",
