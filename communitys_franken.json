@@ -56,7 +56,7 @@
 					"vpninternational"
 				]
 			},
-			"api" : "0.4.4"
+			"api" : "0.4.5"
 		}
 	},
 
@@ -75,6 +75,16 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.45582&lon=11.08036&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
+			}],
+			"timeline": [{
+				"description": "35 Router an die Piratenpartei Nürnberg übergeben",
+				"timestamp": "2013-07-27"
+			}, {
+				"description": "Erste Funkstrecke über 1,5 km",
+				"timestamp": "2014-09-29"
+			}, {
+				"description": " Dachinstallation im Nachbarschaftshaus Gostenhof kann beginnen",
+				"timestamp": "2014-12-19"
 			}]
 		}
 	}, {
@@ -94,26 +104,31 @@
 				"mapType" : "geographical"
 			}],
 			"timeline": [{
-				"description": "Einrichten der Seite Freifunk Fürth auf wiki.freifunk.net",
+				"description": "Einrichten der Seite 'Freifunk Fürth' auf wiki.freifunk.net",
 				"timestamp": "2008-05-29",
 				"url": "http://lists.freifunk.net/pipermail/franken-freifunk.net/2009-February/000000.html"
 			}]
 		}
 	}, {
 		"id" : "hassberge",
-		"radius" : 10,
+		"radius" : 15,
 		"data" : {
 			"name" : "Freifunk Haßberge",
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
-				"city" : "Unfinden",
-				"lat" : 50.093555895082,
-				"lon" : 10.568013390003
+				"city" : "Haßfurt",
+				"lat" : 50.031944,
+				"lon" : 10.506667
 			},
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=17&lat=50.09241&lon=10.56942&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
+			}],
+			"timeline": [{
+				"description": "Erstes regionales Treffen",
+				"timestamp": "2014-12-19",
+				"url": "http://pad.freifunk.net/p/Planung-Ha%C3%9Fberge"
 			}]
 		}
 	}, {
@@ -133,7 +148,7 @@
 				"mapType" : "geographical"
 			}],
 			"timeline": [{
-				"description": "Einrichten der Seite Freifunk_Erlangen auf wiki.freifunk.net",
+				"description": "Einrichten der Seite 'Freifunk Erlangen' auf wiki.freifunk.net",
 				"timestamp": "2008-09-05",
 				"url": "http://wiki.freifunk.net/index.php?title=Freifunk_Erlangen&oldid=4791"
 			}]
@@ -153,6 +168,10 @@
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.78524&lon=9.92406&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
+			}],
+			"timeline": [{
+				"description": "20 Router an die Piratenpartei Würzburg übergeben",
+				"timestamp": "2013-07-27"
 			}]
 		}
 	}]
