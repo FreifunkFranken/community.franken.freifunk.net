@@ -11,7 +11,7 @@ var options = {
 	outputDir: '../freifunkfranken-community/',
 	outputPrefix: '',
 	cacheRouterlistFile: './cache.routerlist.json',
-	cacheMaxAge: 50, //in Minutes
+	cacheMaxAge: 30, //in Minutes
 };
 
 var client = new restClient();
@@ -43,16 +43,16 @@ function saveCommunityData(data, output_filename) {
 	});
 }
 
-function updateCommunity(community, count) {
+function updateCommunity(community, onlineCount, offlineCount) {
 	var output_filename = options.outputDir + options.outputPrefix + community.id + ".json";
 	if (!community.data.state) {
 		community.data.state = {};
 	}
-	community.data.state.nodes = count;
+	community.data.state.nodes = onlineCount;
 	community.data.state.lastchange = Math.round((new Date()).getTime() / 1000);
 	
 	winston.info("==============================================================");
-	winston.info("Online nodes in community '" + community.data.name + "': " + count + "\n");
+	winston.info("Online nodes in community '" + community.data.name + "': " + onlineCount + " (offine: " + offlineCount + ") \n");
 	saveCommunityData(community.data, output_filename);
 }
 
@@ -72,7 +72,7 @@ function getDistance(p1, p2) {
 }
 
 function updateCommunities(data) {
-	var count = 0;
+	var onlineCount = 0, offlineCount = 0;
 	routerlist = data.netmon_response.routerlist;
 	routers = data.netmon_response.routerlist[0].router;
 	
@@ -91,27 +91,28 @@ function updateCommunities(data) {
 	var length = communities.length;
 	var community = {};
 	for (var i = 0; i < length; i = i + 1) {
-		count = 0;
+		onlineCount = offlineCount = 0;
 		winston.info("Routers in " + communities[i].data.name + " (radius: " + communities[i].radius + " km): ");
 		winston.info("-------------------------------------------------------------");
 		for (var j = 0; j < routers.length; j = j + 1) {
-			if (routers[j].statusdata[0].status[0] !== "online") {
-				continue;
-			}
-			
 			var distance = getDistance({
 				"lat" : parseFloat(routers[j].latitude),
 				"lon" : parseFloat(routers[j].longitude)
 			}, communities[i].data.location).toFixed(2);
 			
 			if (distance < communities[i].radius) {
-				winston.info("Node " + routers[j].hostname[0] + ", distance: " + distance + " km");
-				count = count + 1;
+				if (routers[j].statusdata[0].status[0] === "online") {
+					winston.info("Node ON  " + routers[j].hostname[0] + ", distance: " + distance + " km");
+					onlineCount = onlineCount + 1;
+				} else {
+					winston.info("Node OFF " + routers[j].hostname[0] + ", distance: " + distance + " km");
+					offlineCount = offlineCount + 1;
+				}
 			}
 		}
 		community.id = communities[i].id;
 		community.data = extend(communities[i].data, metacommunity.data);
-		updateCommunity(community, count);
+		updateCommunity(community, onlineCount, offlineCount);
 	}
 }
 
