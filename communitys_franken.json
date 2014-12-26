@@ -174,5 +174,39 @@
 				"timestamp": "2013-07-27"
 			}]
 		}
+	}, {
+		"id" : "crailsheim",
+		"radius" : 15,
+		"data" : {
+			"name" : "Freifunk Crailsheim",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Crailsheim",
+				"lat" : 49.134722,
+				"lon" : 10.070556
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.13519&lon=10.0685&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
+	}, {
+		"id" : "forchheim",
+		"radius" : 15,
+		"data" : {
+			"name" : "Freifunk Forchheim",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Ebermannstadt",
+				"lat" : 49.779167,
+				"lon" : 11.184722
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.77509&lon=11.18624&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
 	}]
 }
