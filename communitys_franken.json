@@ -12,10 +12,7 @@
 				]
 			},
 			"location" : {
-				"city" : "Nürnberg",
-				"country": "DE",
-				"lat" : 49.448856931202,
-				"lon" : 11.082108258271
+				"country": "DE"
 			},
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/routerlist.php",
@@ -68,14 +65,24 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Nürnberg",
-				"lat" : 49.448856931202,
-				"lon" : 11.082108258271
+				"lat" : 49.451719442437,
+				"lon" : 11.073559012306,
+				"address": {
+					"Name": "Coworking Nürnberg",
+					"Street": "Josephsplatz ",
+					"Zipcode": "90403"
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.45582&lon=11.08036&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
+			"networks": {
+				"ipv4": [{
+					"network": "10.50.40.0/21"
+				}]
+			},
 			"timeline": [{
 				"description": "35 Router an die Piratenpartei Nürnberg übergeben",
 				"timestamp": "2013-07-27"
@@ -103,6 +110,11 @@
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
+			"networks": {
+				"ipv4": [{
+					"network": "10.50.32.0/21"
+				}]
+			},
 			"timeline": [{
 				"description": "Einrichten der Seite 'Freifunk Fürth' auf wiki.freifunk.net",
 				"timestamp": "2008-05-29",
@@ -115,16 +127,26 @@
 		"data" : {
 			"name" : "Freifunk Haßberge",
 			"metacommunity" : "Freifunk Franken",
-			"location" : {
-				"city" : "Haßfurt",
-				"lat" : 50.031944,
-				"lon" : 10.506667
+			"location": {
+				"city": "Haßfurt",
+				"lat": 50.0263024,
+				"lon": 10.5156375,
+				"address": {
+					"Name": "Meehaeusle",
+					"Street": "Am Hafen 6",
+					"Zipcode": "97437"
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=17&lat=50.09241&lon=10.56942&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
+			"networks": {
+				"ipv4": [{
+					"network": "10.50.56.0/22"
+				}]
+			},
 			"timeline": [{
 				"description": "Erstes regionales Treffen",
 				"timestamp": "2014-12-19",
@@ -147,6 +169,11 @@
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
+			"networks": {
+				"ipv4": [{
+					"network": "10.50.64.0/21"
+				}]
+			},
 			"timeline": [{
 				"description": "Einrichten der Seite 'Freifunk Erlangen' auf wiki.freifunk.net",
 				"timestamp": "2008-09-05",
@@ -169,6 +196,11 @@
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
+			"networks": {
+				"ipv4": [{
+					"network": "10.50.72.0/21"
+				}]
+			},
 			"timeline": [{
 				"description": "20 Router an die Piratenpartei Würzburg übergeben",
 				"timestamp": "2013-07-27"
