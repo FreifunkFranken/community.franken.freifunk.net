@@ -6,7 +6,7 @@ var moment = require('moment');
 var restClient = require('node-rest-client').Client;
 
 var options = {
-	netmonUrl: "https://netmon.freifunk-franken.de/api/rest/routerlist/?limit=500",
+	netmonUrl: "https://netmon.freifunk-franken.de/api/rest/routerlist/?limit=1000",
 	communitysFile: 'communitys_franken.json',
 	outputDir: '../freifunkfranken-community/',
 	outputPrefix: '',
