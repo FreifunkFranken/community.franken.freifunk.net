@@ -53,7 +53,7 @@
 					"vpninternational"
 				]
 			},
-			"api" : "0.4.5"
+			"api" : "0.4.6"
 		}
 	},
 
@@ -83,6 +83,11 @@
 					"network": "10.50.40.0/21"
 				}]
 			},
+			"services": [{
+				"serviceName": "jabber.pm-ib.de",
+				"serviceDescription": "Jabber-Server",
+				"internalUri": "10.50.40.98"
+			}],
 			"timeline": [{
 				"description": "35 Router an die Piratenpartei Nürnberg übergeben",
 				"timestamp": "2013-07-27"
@@ -115,6 +120,11 @@
 					"network": "10.50.32.0/21"
 				}]
 			},
+			"services": [{
+				"serviceName": "MicroNAS",
+				"serviceDescription": "anonymous FTP (10GB)",
+				"internalUri": "ftp://anonymous@10.50.32.100"
+			}],
 			"timeline": [{
 				"description": "Einrichten der Seite 'Freifunk Fürth' auf wiki.freifunk.net",
 				"timestamp": "2008-05-29",
@@ -147,6 +157,13 @@
 					"network": "10.50.56.0/22"
 				}]
 			},
+			"services": [{
+				"serviceName": "Webserver und owncloud im Test",
+				"internalUri": "10.50.56.100"
+			},{
+				"serviceName": "Teeworlds-Game-Server",
+				"internalUri": "10.50.56.123"
+			}],
 			"timeline": [{
 				"description": "Erstes regionales Treffen",
 				"timestamp": "2014-12-19",
