@@ -49,7 +49,7 @@ function updateCommunity(community, onlineCount, offlineCount) {
 		community.data.state = {};
 	}
 	community.data.state.nodes = onlineCount;
-	community.data.state.lastchange = Math.round((new Date()).getTime() / 1000);
+	community.data.state.lastchange = new Date().toJSON();
 	
 	winston.info("==============================================================");
 	winston.info("Online nodes in community '" + community.data.name + "': " + onlineCount + " (offine: " + offlineCount + ") \n");
