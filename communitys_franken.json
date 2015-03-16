@@ -213,6 +213,9 @@
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
+			"contact" : {
+				"facebook" : "https://www.facebook.com/pages/Freifunk-W%C3%BCrzburg/1551181611834107"
+			},
 			"networks": {
 				"ipv4": [{
 					"network": "10.50.72.0/21"
