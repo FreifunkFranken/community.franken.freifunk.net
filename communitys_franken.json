@@ -260,5 +260,107 @@
 				"mapType" : "geographical"
 			}]
 		}
+	}, {
+		"id" : "bamberg",
+		"radius" : 15,
+		"data" : {
+			"name" : "Freifunk Bamberg",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Bamberg",
+				"lat" : 49.891667,
+				"lon" : 10.8916672
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.89512&lon=10.897&layers=B0000TTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
+	}, {
+		"id" : "bamberg",
+		"radius" : 15,
+		"data" : {
+			"name" : "Freifunk Bamberg",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Bamberg",
+				"lat" : 49.891667,
+				"lon" : 10.8916672
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.89512&lon=10.897&layers=B0000TTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
+	}, {
+		"id" : "coburg",
+		"radius" : 20,
+		"data" : {
+			"name" : "Freifunk Coburg",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Coburg",
+				"lat" : 50.266667,
+				"lon" : 10.966667
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=50.26513&lon=10.96275&layers=B0000TTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
+	}, {
+		"id" : "hof",
+		"radius" : 25,
+		"data" : {
+			"name" : "Freifunk Landkreis Hof",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Hof",
+				"lat" : 50.321944,
+				"lon" : 11.918889
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=50.28576&lon=11.81247&layers=B0000TTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
+	}, {
+		"id" : "aschaffenburg",
+		"radius" : 20,
+		"data" : {
+			"name" : "Freifunk Aschaffenburg",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Aschaffenburg",
+				"lat" : 49.976703,
+				"lon" : 9.147747
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.99864&lon=9.12353&layers=B0000TTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
+	}, {
+		"id" : "lauf_an_der_pegnitz",
+		"radius" : 8,
+		"data" : {
+			"name" : "Freifunk Lauf an der Pegnitz",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Lauf an der Pegnitz",
+				"lat" : 49.510278,
+				"lon" : 11.277222
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.50535&lon=11.27395&layers=B0000TTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
 	}]
 }
