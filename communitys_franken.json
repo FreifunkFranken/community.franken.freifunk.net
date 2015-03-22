@@ -362,5 +362,23 @@
 				"mapType" : "geographical"
 			}]
 		}
+	}, {
+		"id" : "badreichenhall",
+		"radius" : 10,
+		"data" : {
+			"name" : "Freifunk Berchtesgadener Land",
+			"url" : "http://bgl.freifunk.net/",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Bad Reichenhall",
+				"lat" : 47.731667,
+				"lon" : 12.881389
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=47.76464&lon=12.89648&layers=B0000TTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}]
+		}
 	}]
 }
