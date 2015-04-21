@@ -112,6 +112,7 @@ function updateCommunities(data) {
 		}
 		community.id = communities[i].id;
 		community.data = extend(communities[i].data, metacommunity.data);
+		community.data.contact = extend(communities[i].data.contact, metacommunity.data.contact);
 		updateCommunity(community, onlineCount, offlineCount);
 	}
 }
