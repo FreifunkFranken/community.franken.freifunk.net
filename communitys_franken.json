@@ -247,34 +247,26 @@
 		"id" : "forchheim",
 		"radius" : 15,
 		"data" : {
-			"name" : "Freifunk Forchheim",
+			"name" : "Freifunk Ebermannstadt",
+			"url" : "http://freifunk-ebs.de/",
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Ebermannstadt",
 				"lat" : 49.779167,
 				"lon" : 11.184722
 			},
+			"contact" : {
+				"email" : "kontakt@freifunk-ebs.de"
+			},
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.77509&lon=11.18624&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
-			}]
-		}
-	}, {
-		"id" : "bamberg",
-		"radius" : 15,
-		"data" : {
-			"name" : "Freifunk Bamberg",
-			"metacommunity" : "Freifunk Franken",
-			"location" : {
-				"city" : "Bamberg",
-				"lat" : 49.891667,
-				"lon" : 10.8916672
-			},
-			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.89512&lon=10.897&layers=B0000TTTTT",
-				"technicalType" : "netmon",
-				"mapType" : "geographical"
+			}],
+			"timeline": [{
+				"description": "inFranken.de: Die Ebermannstadter Feuerwehr hat freies Wlan",
+				"timestamp": "2015-04-13",
+				"url": "http://www.infranken.de/regional/forchheim/Die-Ebermannstadter-Feuerwehr-hat-freies-Wlan;art216,1014706"
 			}]
 		}
 	}, {
