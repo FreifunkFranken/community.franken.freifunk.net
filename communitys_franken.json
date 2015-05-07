@@ -53,7 +53,7 @@
 					"vpninternational"
 				]
 			},
-			"api" : "0.4.6"
+			"api" : "0.4.8"
 		}
 	},
 
@@ -274,16 +274,30 @@
 		"radius" : 15,
 		"data" : {
 			"name" : "Freifunk Bamberg",
+			"url" : "http://www.freifunk-bamberg.de/",
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Bamberg",
 				"lat" : 49.891667,
 				"lon" : 10.8916672
 			},
+			"contact" : {
+				"email" : "kontakt@freifunk-bamberg.de",
+				"twitter" : "@FreifunkBa"
+			},
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.89512&lon=10.897&layers=B0000TTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
+			}],
+			"networks": {
+				"ipv4": [{
+					"network": "10.50.60.0/22"
+				}]
+			},
+			"timeline": [{
+				"description": "Freifunk-Bamberg wird Teil von Freifunk-Franken",
+				"timestamp": "2015-05-05"
 			}]
 		}
 	}, {
@@ -356,6 +370,11 @@
 				"irc": "irc://irc.freenode.net/#freifunkfranken",
 				"twitter" : "@FreifunkFranken"
 			},
+			"services": [{
+				"serviceName": "CommunityNas",
+				"serviceDescription": "https://wiki.freifunk-franken.de/w/Dienste/CommunityNas",
+				"internalUri": "10.50.40.40"
+			}],
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.50535&lon=11.27395&layers=B0000TTTTT",
 				"technicalType" : "netmon",
