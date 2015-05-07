@@ -280,6 +280,8 @@
 				"lat" : 49.891667,
 				"lon" : 10.8916672
 			},
+			"contact" : {
+				"email" : "kontakt@freifunk-bamberg.de"
 			"nodeMaps" : [{
 				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.89512&lon=10.897&layers=B0000TTTTT",
 				"technicalType" : "netmon",
