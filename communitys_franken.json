@@ -298,6 +298,11 @@
 			"timeline": [{
 				"description": "Freifunk-Bamberg wird Teil von Freifunk-Franken",
 				"timestamp": "2015-05-05"
+			}],
+			"feeds": [{
+				"name": "Kalender",
+				"category": "ics",
+				"url": "https://www.google.com/calendar/ical/ufdsc5q3a308snrrdjn752jato%40group.calendar.google.com/public/basic.ics" 
 			}]
 		}
 	}, {
