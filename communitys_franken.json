@@ -168,6 +168,11 @@
 				"description": "Erstes regionales Treffen",
 				"timestamp": "2014-12-19",
 				"url": "http://pad.freifunk.net/p/Planung-Ha%C3%9Fberge"
+			}],
+			"feeds": [{
+				"name": "Kalender",
+				"category": "ics",
+				"url": "https://www.google.com/calendar/ical/2dsrm900h9iqdao2112527mjt4%40group.calendar.google.com/public/basic.ics" 
 			}]
 		}
 	}, {
