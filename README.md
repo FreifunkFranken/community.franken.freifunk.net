@@ -1,14 +1,14 @@
 community.franken.freifunk.net
 ==============================
 
-Freifunk-Franken sieht sich als Meta-Communitie, bei der verschiedene Regionen, Städte und Dörfer eine gemeinsame Firmware und gemeinsame Gateways nutzen und untereinander vernetzt sind. Da wir uns Infrastruktur teilen sind auch viele der API-Felder bei allen Sub-Communities identisch. Dieses Repository dient dazu die einzelnen Communitie-Dateien für die Freifunk-API zu generieren.
+Freifunk-Franken sieht sich als Meta-Community, bei der verschiedene Regionen, Städte und Dörfer eine gemeinsame Firmware und gemeinsame Gateways nutzen und untereinander vernetzt sind. Da wir uns Infrastruktur teilen sind auch viele der API-Felder bei allen Sub-Communities identisch. Dieses Repository dient dazu die einzelnen Community-Dateien für die Freifunk-API zu generieren.
 
 Dabei wird wie folgt vorgegangen:
 
-1. Jede Sub-Community erhält alle Eigentschaften (z.B. Kontaktdaten) aus einem gemeinsamen Meta-Community Objekt.
-2. Jede Sub-Community hat ihre eigenen Koordinaten und ihren eigenen Namen. Auch andere Felder (z.B. Kontaktperson) kann in der Sub-Community überschriben werden.
+1. Jede Sub-Community erhält alle Eigenschaften (z.B. Kontaktdaten) aus einem gemeinsamen Meta-Community Objekt.
+2. Jede Sub-Community hat ihre eigenen Koordinaten und ihren eigenen Namen. Auch andere Felder (z.B. Kontaktperson) kann in der Sub-Community überschrieben werden.
 3. Jede Sub-Community hat einen geografischen Mittelpunkt und einen Einzugs-Radius in km.
-4. Das Skript halt alle Knoten aus dem Monitoring (Netmon) und schaut, welche Knoten im Einzugs-Bereich welcher Sub-Community liegen. Diese werden gezählt und jeder Sub-Community zugeordnet.
+4. Das Skript holt alle Knoten aus dem Monitoring (Netmon) und schaut, welche Knoten im Einzugs-Bereich welcher Sub-Community liegen. Diese werden gezählt und der jeweiligen Sub-Community zugeordnet.
 
 Setup
 -----
@@ -31,13 +31,13 @@ cd community.franken.freifunk.net
 npm install windston moment node-rest-client
 ```
 
-Danach sollte die Datei [communitys_franken.json](https://github.com/FreifunkFranken/community.franken.freifunk.net/blob/master/communitys_franken.json) an die eigene Met-Communitity angepasst werden.
+Danach sollte die Datei [communitys_franken.json](https://github.com/FreifunkFranken/community.franken.freifunk.net/blob/master/communitys_franken.json) an die eigene Meta-Communitity angepasst werden.
 
 
 Ausführen
 ---------
 
-Zuerst werden die eizelnen Sub-Communitie-Dateien erzeugt:
+Zuerst werden die eizelnen Sub-Community-Dateien erzeugt:
 ```
 node create_community_files.js
 ```
