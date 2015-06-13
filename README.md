@@ -13,11 +13,12 @@ Dabei wird wie folgt vorgegangen:
 Setup
 -----
 
-[Node.js and npm müssen installiert sein.](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
+[Node.js und npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) sowie git müssen installiert sein.
 
 ```
 node -v
 npm -v
+git --version
 ```
 
 Zuerst das Repository mit den eigentlichen Community-Files holen. (Dies ist nicht nötig, wenn man die Community-Dateien später auf einem eigenen Webserver ablegen will).
