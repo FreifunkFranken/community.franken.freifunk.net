@@ -1,0 +1,22 @@
+{
+  "name": "community.franken.freifunk.net",
+  "homepage": "https://github.com/FreifunkFranken/community.franken.freifunk.net",
+  "version": "1.0.0",
+  "description": "generates files for the freifunk-community-api",
+  "author": "delphiN",
+  "license": "AGPLv3",
+  "main": "create_community_files.js",
+  "dependencies": {},
+  "devDependencies": {
+    "winston": "~0.7.2",
+    "moment": "~2.5.1",
+    "node-rest-client": "~0.7.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FreifunkFranken/community.franken.freifunk.net.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FreifunkFranken/community.franken.freifunk.net/issues"
+  }
+}
