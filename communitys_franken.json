@@ -111,7 +111,7 @@
 				"lon" : 10.99027
 			},
 			"nodeMaps" : [{
-				"url:" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.47703&lon=10.96743&layers=B0000TTTTTT",
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.47703&lon=10.96743&layers=B0000TTTTTT",
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
