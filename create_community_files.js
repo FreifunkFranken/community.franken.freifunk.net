@@ -1,6 +1,7 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 var fs = require('fs');
+var stringify = require('json-stable-stringify');
 var winston = require('winston');
 var moment = require('moment');
 var restClient = require('node-rest-client').Client;
@@ -34,7 +35,7 @@ function extend(destination, source) {
 }
 
 function saveCommunityData(data, output_filename) {
-	fs.writeFile(output_filename, JSON.stringify(data, null, 4), function(err) {
+	fs.writeFile(output_filename, stringify(data, {space: 4}), function(err) {
 		if (err) {
 			winston.error(err);
 		} else {
@@ -160,7 +161,7 @@ function run() {
 				client.get(options.netmonUrl,
 					function(data, response) {
 						winston.info("saving data to file " + options.cacheRouterlistFile + "\n");
-						fs.writeFile(options.cacheRouterlistFile, JSON.stringify(data, null, 4), function(err) {
+						fs.writeFile(options.cacheRouterlistFile, stringify(data, {space: 4}), function(err) {
 							if (err) {
 								winston.error(err);
 							}

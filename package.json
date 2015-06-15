@@ -10,7 +10,8 @@
   "devDependencies": {
     "winston": "~0.7.2",
     "moment": "~2.5.1",
-    "node-rest-client": "~0.7.12"
+    "node-rest-client": "~0.7.12",
+    "json-stable-stringify": "jimlloyd/json-stable-stringify"
   },
   "repository": {
     "type": "git",
