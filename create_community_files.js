@@ -1,6 +1,7 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 var fs = require('fs');
+var deepExtend = require('extend');
 var stringify = require('json-stable-stringify');
 var winston = require('winston');
 var moment = require('moment');
@@ -29,6 +30,10 @@ function extend(destination, source) {
 			destination[property] = source[property];
 		} else if (destination[property] instanceof Array && source[property] instanceof Array) {
 			Array.prototype.push.apply(destination[property], source[property]);
+		} else {
+			if (typeof destination[property] == 'object') {
+				deepExtend(true, destination[property], source[property]);
+			}
 		}
 	}
 	return destination;
@@ -102,7 +107,7 @@ function updateCommunities(data) {
 		}
 		community.id = communities[i].id;
 		community.data = extend(communities[i].data, metacommunity.data);
-		community.data.contact = extend(communities[i].data.contact, metacommunity.data.contact);
+		//community.data.contact = extend(communities[i].data.contact, metacommunity.data.contact);
 		updateCommunity(community, onlineCount, offlineCount);
 	}
 }
