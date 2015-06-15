@@ -12,14 +12,14 @@ var options = {
 	outputDir: '../freifunkfranken-community/',
 	outputPrefix: '',
 	cacheRouterlistFile: './cache.routerlist.json',
-	cacheMaxAge: 30, //in Minutes
+	cacheMaxAge: 30, //in minutes
 };
 
 var client = new restClient();
 var routerlist = null;
 var routers = null;
 
-//gets loaded from file
+// gets loaded from file
 var metacommunity = null;
 var communities = null;
 
@@ -77,17 +77,6 @@ function updateCommunities(data) {
 	routerlist = data.netmon_response.routerlist;
 	routers = data.netmon_response.routerlist[0].router;
 	
-	/*
-	for (var n = 0; n < routers.length; n = n + 1) {
-		if (routers[n].statusdata[0].status[0] !== "online") {
-			continue;
-		}
-		count = count + 1;
-	}
-	// write meta-community file
-	updateCommunity(metacommunity, count);
-	*/
-
 	// write community files
 	var length = communities.length;
 	var community = {};
@@ -136,7 +125,6 @@ function exec(instructions) {
 	terminal.stdin.end();
 }
 
-
 function run() {
 	fs.readFile(options.communitysFile, 'utf8', function read(err, data) {
 		if (err) {
@@ -157,7 +145,7 @@ function run() {
 			}
 			if (err || (minutesDiff > options.cacheMaxAge)) {
 				winston.info("Loading routerlist from netmon...");
-				//TODO split into multible requests
+				//TODO split into multiple requests
 				client.get(options.netmonUrl,
 					function(data, response) {
 						winston.info("saving data to file " + options.cacheRouterlistFile + "\n");
@@ -183,4 +171,3 @@ function run() {
 }
 
 run();
-
