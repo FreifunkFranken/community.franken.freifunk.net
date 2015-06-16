@@ -1,7 +1,6 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 var fs = require('fs');
-var deepExtend = require('extend');
 var stringify = require('json-stable-stringify');
 var winston = require('winston');
 var moment = require('moment');
@@ -32,7 +31,7 @@ function extend(destination, source) {
 			Array.prototype.push.apply(destination[property], source[property]);
 		} else {
 			if (typeof destination[property] == 'object') {
-				deepExtend(true, destination[property], source[property]);
+				extend(destination[property], source[property]);
 			}
 		}
 	}
