@@ -115,6 +115,14 @@
 				"technicalType" : "netmon",
 				"mapType" : "geographical"
 			}],
+			"contact" : {
+				"email" : "fragen@freifunk-franken.de",
+				"facebook" : "https://www.facebook.com/FreifunkFranken",
+				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
+				"phone" : "+49 9101 7018607",
+				"irc": "irc://irc.freenode.net/#freifunkfranken",
+				"twitter" : "@FreifunkFranken"
+			},
 			"networks": {
 				"ipv4": [{
 					"network": "10.50.32.0/21"
@@ -136,6 +144,7 @@
 		"radius" : 15,
 		"data" : {
 			"name" : "Freifunk Haßberge",
+			"url": "http://www.freifunk-hassberge.de",
 			"metacommunity" : "Freifunk Franken",
 			"location": {
 				"city": "Haßfurt",
@@ -168,6 +177,10 @@
 				"description": "Erstes regionales Treffen",
 				"timestamp": "2014-12-19",
 				"url": "http://pad.freifunk.net/p/Planung-Ha%C3%9Fberge"
+			}, {
+				"description": "Haßfurter Tagblatt: Freies Internet in der Haßfurter City",
+				"timestamp": "2015-04-29",
+				"url": "http://www.hassfurter-tagblatt.de/lokales/aktuelles/art2824,297551"
 			}],
 			"feeds": [{
 				"name": "Kalender",
