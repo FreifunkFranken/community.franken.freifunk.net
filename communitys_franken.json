@@ -346,6 +346,9 @@
 		"data" : {
 			"name" : "Freifunk Landkreis Hof",
 			"metacommunity" : "Freifunk Franken",
+			"contact" : {
+				"ml" : "http://ml06.ispgateway.de/mailman/listinfo/freifunk-hof_mailingliste.wir-sind-hofer.de"
+			},
 			"location" : {
 				"city" : "Hof",
 				"lat" : 50.321944,
