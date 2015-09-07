@@ -147,13 +147,13 @@
 			"url": "http://www.freifunk-hassberge.de",
 			"metacommunity" : "Freifunk Franken",
 			"location": {
-				"city": "Haßfurt",
-				"lat": 50.0263024,
-				"lon": 10.5156375,
+				"city": "Ostheim",
+				"lat": 50.036083155156,
+				"lon": 10.526221069292,
 				"address": {
-					"Name": "Meehaeusle",
-					"Street": "Am Hafen 6",
-					"Zipcode": "97437"
+					"Name": "Plocker",
+					"Street": "",
+					"Zipcode": ""
 				}
 			},
 			"nodeMaps" : [{
@@ -167,9 +167,7 @@
 				}]
 			},
 			"services": [{
-				"serviceName": "Webserver und owncloud im Test",
-				"internalUri": "10.50.56.100"
-			},{
+		
 				"serviceName": "Teeworlds-Game-Server",
 				"internalUri": "10.50.56.123"
 			}],
@@ -186,7 +184,57 @@
 				"name": "Kalender",
 				"category": "ics",
 				"url": "https://www.google.com/calendar/ical/2dsrm900h9iqdao2112527mjt4%40group.calendar.google.com/public/basic.ics" 
+			}]		}
+	}, {
+		"id" : "hassbergesued",
+		"radius" : 15,
+		"data" : {
+			"name" : "Freifunk Haßberge",
+			"url": "http://www.freifunk-hassberge.de",
+			"metacommunity" : "Freifunk Franken",
+			"location": {
+				"city": "Haßfurt",
+				"lat": 50.0263024,
+				"lon": 10.5156375,
+				"address": {
+					"Name": "Meehaeusle",
+					"Street": "Am Hafen 6",
+					"Zipcode": "97437"
+				}
+			},
+			"nodeMaps" : [{
+				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=17&lat=50.09241&lon=10.56942&layers=B0000TTTTTT",
+				"technicalType" : "netmon",
+				"mapType" : "geographical"
+			}],
+			"networks": {
+				"ipv4": [{
+					"network": "10.50.60.0/22"
+				}]
+			},
+			"services": [{
+				"serviceName": "Webserver mit Joomla",
+				"internalUri": "10.50.60.100"
+			},{
+				"serviceName": "Webserver mid Mediawiki",
+				"internalUri": "10.50.60.101"
+		
+			}],
+			"timeline": [{
+				"description": "Erstes regionales Treffen",
+				"timestamp": "2014-12-19",
+				"url": "http://pad.freifunk.net/p/Planung-Ha%C3%9Fberge"
+			}, {
+				"description": "Haßfurter Tagblatt: Freies Internet in der Haßfurter City",
+				"timestamp": "2015-04-29",
+				"url": "http://www.hassfurter-tagblatt.de/lokales/aktuelles/art2824,297551"
+			}],
+			"feeds": [{
+				"name": "Kalender",
+				"category": "ics",
+				"url": "https://www.google.com/calendar/ical/2dsrm900h9iqdao2112527mjt4%40group.calendar.google.com/public/basic.ics" 
 			}]
+			
 		}
 	}, {
 		"id" : "erlangen",
