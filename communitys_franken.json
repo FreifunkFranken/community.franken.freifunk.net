@@ -24,7 +24,7 @@
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
 				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
 				"phone" : "+49 9101 7018607",
-				"irc": "irc://irc.freenode.net/#freifunkfranken",
+				"irc": "irc://irc.freenode.net/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
 			},
 			"support": {
@@ -120,7 +120,7 @@
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
 				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
 				"phone" : "+49 9101 7018607",
-				"irc": "irc://irc.freenode.net/#freifunkfranken",
+				"irc": "irc://irc.freenode.net/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
 			},
 			"networks": {
@@ -393,7 +393,7 @@
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
 				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
 				"phone" : "+49 170 8117104",
-				"irc": "irc://irc.freenode.net/#freifunkfranken",
+				"irc": "irc://irc.freenode.net/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
 			},
 			"services": [{
