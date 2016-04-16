@@ -41,7 +41,7 @@ Danach sollte die Datei [communitys_franken.json](https://github.com/FreifunkFra
 Ausführen
 ---------
 
-Zuerst werden die eizelnen Sub-Community-Dateien erzeugt:
+Zuerst werden die einzelnen Sub-Community-Dateien erzeugt:
 ```
 node create_community_files.js
 ```
