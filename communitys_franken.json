@@ -3,7 +3,7 @@
 		"id" : "franken",
 		"data" : {
 			"name" : "Freifunk Franken",
-			"url" : "http://freifunk-franken.de",
+			"url" : "https://freifunk-franken.de/",
 			"state" : {
 				"focus": [
 					"infrastructure/backbone",
@@ -22,7 +22,7 @@
 			"contact" : {
 				"email" : "fragen@freifunk-franken.de",
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
-				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
+				"ml" : "https://lists.freifunk.net/mailman/listinfo/franken-freifunk.net/",
 				"phone" : "+49 9101 7018607",
 				"irc": "irc://irc.freenode.net/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
@@ -118,7 +118,7 @@
 			"contact" : {
 				"email" : "fragen@freifunk-franken.de",
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
-				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
+				"ml" : "https://lists.freifunk.net/mailman/listinfo/franken-freifunk.net/",
 				"phone" : "+49 9101 7018607",
 				"irc": "irc://irc.freenode.net/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
@@ -136,7 +136,7 @@
 			"timeline": [{
 				"description": "Einrichten der Seite 'Freifunk Fürth' auf wiki.freifunk.net",
 				"timestamp": "2008-05-29",
-				"url": "http://lists.freifunk.net/pipermail/franken-freifunk.net/2009-February/000000.html"
+				"url": "https://lists.freifunk.net/pipermail/franken-freifunk.net/2009-February/000000.html"
 			}]
 		}
 	}, {
@@ -176,7 +176,7 @@
 			"timeline": [{
 				"description": "Erstes regionales Treffen",
 				"timestamp": "2014-12-19",
-				"url": "http://pad.freifunk.net/p/Planung-Ha%C3%9Fberge"
+				"url": "https://pad.freifunk.net/p/Planung-Ha%C3%9Fberge"
 			}, {
 				"description": "Haßfurter Tagblatt: Freies Internet in der Haßfurter City",
 				"timestamp": "2015-04-29",
@@ -212,7 +212,7 @@
 			"timeline": [{
 				"description": "Einrichten der Seite 'Freifunk Erlangen' auf wiki.freifunk.net",
 				"timestamp": "2008-09-05",
-				"url": "http://wiki.freifunk.net/index.php?title=Freifunk_Erlangen&oldid=4791"
+				"url": "https://wiki.freifunk.net/index.php?title=Freifunk_Erlangen&oldid=4791"
 			}]
 		}
 	}, {
@@ -347,7 +347,7 @@
 			"name" : "Freifunk Landkreis Hof",
 			"metacommunity" : "Freifunk Franken",
 			"contact" : {
-				"ml" : "http://ml06.ispgateway.de/mailman/listinfo/freifunk-hof_mailingliste.wir-sind-hofer.de"
+				"ml" : "https://ml06.ispgateway.de/mailman/listinfo/freifunk-hof_mailingliste.wir-sind-hofer.de/"
 			},
 			"location" : {
 				"city" : "Hof",
@@ -391,7 +391,7 @@
 			"contact" : {
 				"email" : "freifunk@scheese.de",
 				"facebook" : "https://www.facebook.com/FreifunkFranken",
-				"ml" : "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
+				"ml" : "https://lists.freifunk.net/mailman/listinfo/franken-freifunk.net/",
 				"phone" : "+49 170 8117104",
 				"irc": "irc://irc.freenode.net/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
