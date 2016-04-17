@@ -15,8 +15,7 @@
 				"country": "DE"
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/routerlist.php",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/routers",
 				"mapType" : "list/status"
 			}],
 			"contact" : {
@@ -74,8 +73,7 @@
 				}
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.45582&lon=11.08036&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.44916,11.08332,13",
 				"mapType" : "geographical"
 			}],
 			"networks": {
@@ -111,8 +109,7 @@
 				"lon" : 10.99027
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.47703&lon=10.96743&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.48067,10.98418,14",
 				"mapType" : "geographical"
 			}],
 			"contact" : {
@@ -157,8 +154,7 @@
 				}
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=17&lat=50.09241&lon=10.56942&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.03664,10.51211,14",
 				"mapType" : "geographical"
 			}],
 			"networks": {
@@ -200,8 +196,7 @@
 				"lon" : 11.0019221
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.59401&lon=11.01177&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.59786,11.00581,14",
 				"mapType" : "geographical"
 			}],
 			"networks": {
@@ -227,8 +222,7 @@
 				"lon" : 9.93489
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.78524&lon=9.92406&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.77694,9.92769,13",
 				"mapType" : "geographical"
 			}],
 			"contact" : {
@@ -256,8 +250,7 @@
 				"lon" : 10.070556
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.13519&lon=10.0685&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.13304,10.07652,14",
 				"mapType" : "geographical"
 			}]
 		}
@@ -277,8 +270,7 @@
 				"email" : "kontakt@freifunk-ebs.de"
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.77509&lon=11.18624&layers=B0000TTTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.78085,11.18129,15",
 				"mapType" : "geographical"
 			}],
 			"timeline": [{
@@ -304,8 +296,7 @@
 				"twitter" : "@FreifunkBa"
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.89512&lon=10.897&layers=B0000TTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.90304,10.89483,13",
 				"mapType" : "geographical"
 			}],
 			"networks": {
@@ -335,8 +326,7 @@
 				"lon" : 10.966667
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=50.26513&lon=10.96275&layers=B0000TTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.26586,10.97157,12",
 				"mapType" : "geographical"
 			}]
 		}
@@ -355,8 +345,7 @@
 				"lon" : 11.918889
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=50.28576&lon=11.81247&layers=B0000TTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.30480,11.91450,13",
 				"mapType" : "geographical"
 			}]
 		}
@@ -372,8 +361,7 @@
 				"lon" : 9.147747
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=11&lat=49.99864&lon=9.12353&layers=B0000TTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.99891,9.14921,12",
 				"mapType" : "geographical"
 			}]
 		}
@@ -402,8 +390,7 @@
 				"internalUri": "10.50.40.40"
 			}],
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=49.50535&lon=11.27395&layers=B0000TTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.50225,11.28038,13",
 				"mapType" : "geographical"
 			}]
 		}
@@ -420,8 +407,7 @@
 				"lon" : 12.881389
 			},
 			"nodeMaps" : [{
-				"url" : "https://netmon.freifunk-franken.de/map.php?zoom=12&lat=47.76464&lon=12.89648&layers=B0000TTTTT",
-				"technicalType" : "netmon",
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=47.75779,12.79152,11",
 				"mapType" : "geographical"
 			}]
 		}
