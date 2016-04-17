@@ -144,7 +144,7 @@
 		"radius" : 15,
 		"data" : {
 			"name" : "Freifunk Haßberge",
-			"url": "http://www.freifunk-hassberge.de",
+			"url": "http://www.freifunk-hassberge.de/",
 			"metacommunity" : "Freifunk Franken",
 			"location": {
 				"city": "Haßfurt",
