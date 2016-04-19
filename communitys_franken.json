@@ -149,6 +149,9 @@
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.03664,10.51211,14",
 				"mapType" : "geographical"
 			}],
+			"contact" : {
+				"facebook" : "https://www.facebook.com/freifunkhassberge/"
+			},
 			"networks": {
 				"ipv4": [{
 					"network": "10.50.56.0/22"
