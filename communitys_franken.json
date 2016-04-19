@@ -112,14 +112,6 @@
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.48067,10.98418,14",
 				"mapType" : "geographical"
 			}],
-			"contact" : {
-				"email" : "fragen@freifunk-franken.de",
-				"facebook" : "https://www.facebook.com/FreifunkFranken",
-				"ml" : "https://lists.freifunk.net/mailman/listinfo/franken-freifunk.net/",
-				"phone" : "+49 9101 7018607",
-				"irc": "irc://irc.freenode.net/#freifunk-franken",
-				"twitter" : "@FreifunkFranken"
-			},
 			"networks": {
 				"ipv4": [{
 					"network": "10.50.32.0/21"
@@ -378,11 +370,7 @@
 			},
 			"contact" : {
 				"email" : "freifunk@scheese.de",
-				"facebook" : "https://www.facebook.com/FreifunkFranken",
-				"ml" : "https://lists.freifunk.net/mailman/listinfo/franken-freifunk.net/",
-				"phone" : "+49 170 8117104",
-				"irc": "irc://irc.freenode.net/#freifunk-franken",
-				"twitter" : "@FreifunkFranken"
+				"phone" : "+49 170 8117104"
 			},
 			"services": [{
 				"serviceName": "CommunityNas",
