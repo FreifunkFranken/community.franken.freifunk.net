@@ -17,6 +17,10 @@
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/routers",
 				"mapType" : "list/status"
+			},
+			{
+				"url": "https://monitoring.freifunk-franken.de/api/nodelist",
+				"technicalType": "nodelist"
 			}],
 			"contact" : {
 				"email" : "fragen@freifunk-franken.de",
