@@ -382,7 +382,7 @@
 			"services": [{
 				"serviceName": "CommunityNas",
 				"serviceDescription": "https://wiki.freifunk-franken.de/w/Dienste/CommunityNas",
-				"internalUri": "10.50.40.40"
+				"internalUri": "10.50.88.40"
 			}],
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.50225,11.28038,13",
