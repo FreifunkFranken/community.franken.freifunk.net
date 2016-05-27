@@ -1,55 +1,46 @@
 community.franken.freifunk.net
 ==============================
 
-Freifunk-Franken sieht sich als Meta-Community, bei der verschiedene Regionen, Städte und Dörfer eine gemeinsame Firmware und gemeinsame Gateways nutzen und untereinander vernetzt sind. Da wir uns Infrastruktur teilen sind auch viele der API-Felder bei allen Sub-Communities identisch. Dieses Repository dient dazu die einzelnen Community-Dateien für die Freifunk-API zu generieren.
+Freifunk-Franken sieht sich als Meta-Community, bei der verschiedene Regionen, Städte und Dörfer eine gemeinsame Firmware und gemeinsame Gateways nutzen und untereinander vernetzt sind.
+Da wir uns Infrastruktur teilen sind auch viele der API-Felder bei allen Sub-Communities identisch.
+Dieses Repository dient dazu die einzelnen Community-Dateien für die Freifunk-API zu generieren.
 
 Dabei wird wie folgt vorgegangen:
 
 1. Jede Sub-Community erhält alle Eigenschaften (z.B. Kontaktdaten) aus einem gemeinsamen Meta-Community Objekt.
 2. Jede Sub-Community hat ihre eigenen Koordinaten und ihren eigenen Namen. Auch andere Felder (z.B. Kontaktperson) kann in der Sub-Community überschrieben werden.
 3. Jede Sub-Community hat einen geografischen Mittelpunkt und einen Einzugs-Radius in km.
-4. Das Skript holt alle Knoten aus dem Monitoring (Netmon) und schaut, welche Knoten im Einzugs-Bereich welcher Sub-Community liegen. Diese werden gezählt und der jeweiligen Sub-Community zugeordnet.
+4. Das Skript holt alle Knoten aus dem Monitoring und schaut, welche Knoten im Einzugs-Bereich welcher Sub-Community liegen. Diese werden gezählt und der jeweiligen Sub-Community zugeordnet.
 
 Setup
 -----
 
-[Node.js und npm](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) sowie git müssen installiert sein.
+Zuerst das Repository mit den eigentlichen Community-Files holen:
 
 ```
-node -v
-npm -v
-git --version
+git clone git@github.com:FreifunkFranken/freifunkfranken-community.git
 ```
 
-Zuerst das Repository mit den eigentlichen Community-Files holen. (Dies ist nicht nötig, wenn man die Community-Dateien später auf einem eigenen Webserver ablegen will).
+Dann dieses Repository holen:
 
 ```
-git clone https://github.com/FreifunkFranken/freifunkfranken-community.git
+git clone git@github.com:FreifunkFranken/community.franken.freifunk.net.git
 ```
-
-Dann dieses Repository holen, öffnen und Abhängigkeiten installieren.
-
-```
-git clone https://github.com/mojoaxel/community.franken.freifunk.net.git
-cd community.franken.freifunk.net
-npm install
-```
-
-Danach sollte die Datei [communitys_franken.json](https://github.com/FreifunkFranken/community.franken.freifunk.net/blob/master/communitys_franken.json) an die eigene Meta-Communitity angepasst werden.
 
 
 Ausführen
 ---------
 
-Zuerst werden die einzelnen Sub-Community-Dateien erzeugt:
+Nun werden die einzelnen Sub-Community-Dateien erzeugt bzw. aktualisiert:
 ```
-node create_community_files.js
+cd community.franken.freifunk.net
+python3 create_community_files.py ../freifunkfranken-community
 ```
 
-Danach werden die Dateien auf Github gepushed. (Dies ist nicht nötig, wenn man die Community-Dateien später auf einem eigenen Webserver ablegen will).
+Danach werden die Sub-Community-Dateien committed und zu GitHub gepushed:
 
 ```
-cd ../freifunkfranken-community/
-git commit -a -m "updated via netmon.freiunk-franken.de"
+cd ../freifunkfranken-community
+git commit -a -m "Updated nodes count from Freifunk Franken Monitoring."
 git push origin master
 ```
