@@ -38,6 +38,10 @@
 					}]
 				}
 			},
+			"socialprojects": {
+				"website": "https://wiki.freifunk-franken.de/w/FreifunkFuerFluechtlinksunterkuenfte",
+				"contact": "fragen@freifunk-franken.de"
+			},
 			"techDetails" : {
 				"firmware" : {
 					"name" : "Freifunk-Franken Firmware",
@@ -90,6 +94,9 @@
 				"serviceDescription": "Jabber-Server",
 				"internalUri": "10.50.40.98"
 			}],
+			"socialprojects": {
+				"number": 3
+			},
 			"timeline": [{
 				"description": "35 Router an die Piratenpartei Nürnberg übergeben",
 				"timestamp": "2013-07-27"
@@ -126,6 +133,9 @@
 				"serviceDescription": "anonymous FTP (10GB)",
 				"internalUri": "ftp://anonymous@10.50.32.100"
 			}],
+			"socialprojects": {
+				"number": 3
+			},
 			"timeline": [{
 				"description": "Einrichten der Seite 'Freifunk Fürth' auf wiki.freifunk.net",
 				"timestamp": "2008-05-29",
@@ -168,6 +178,9 @@
 				"serviceName": "Teeworlds-Game-Server",
 				"internalUri": "10.50.56.123"
 			}],
+			"socialprojects": {
+				"number": 4
+			},
 			"timeline": [{
 				"description": "Erstes regionales Treffen",
 				"timestamp": "2014-12-19",
@@ -180,7 +193,7 @@
 			"feeds": [{
 				"name": "Kalender",
 				"category": "ics",
-				"url": "https://www.google.com/calendar/ical/2dsrm900h9iqdao2112527mjt4%40group.calendar.google.com/public/basic.ics" 
+				"url": "https://www.google.com/calendar/ical/2dsrm900h9iqdao2112527mjt4%40group.calendar.google.com/public/basic.ics"
 			}]
 		}
 	}, {
@@ -202,6 +215,9 @@
 				"ipv4": [{
 					"network": "10.50.64.0/21"
 				}]
+			},
+			"socialprojects": {
+				"number": 9
 			},
 			"timeline": [{
 				"description": "Einrichten der Seite 'Freifunk Erlangen' auf wiki.freifunk.net",
@@ -232,6 +248,10 @@
 					"network": "10.50.72.0/21"
 				}]
 			},
+			"socialprojects": {
+				"number": 2,
+				"email": "burkard.fuchs@stadt.wuerzburg.de"
+			},
 			"timeline": [{
 				"description": "20 Router an die Piratenpartei Würzburg übergeben",
 				"timestamp": "2013-07-27"
@@ -251,7 +271,10 @@
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.13304,10.07652,14",
 				"mapType" : "geographical"
-			}]
+			}],
+			"socialprojects": {
+				"number": 2
+			},
 		}
 	}, {
 		"id" : "forchheim",
@@ -272,6 +295,9 @@
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.78085,11.18129,15",
 				"mapType" : "geographical"
 			}],
+			"socialprojects": {
+				"number": 2
+			},
 			"timeline": [{
 				"description": "inFranken.de: Die Ebermannstadter Feuerwehr hat freies Wlan",
 				"timestamp": "2015-04-13",
@@ -303,6 +329,9 @@
 					"network": "10.50.60.0/22"
 				}]
 			},
+			"socialprojects": {
+				"number": 4
+			},
 			"timeline": [{
 				"description": "Freifunk-Bamberg wird Teil von Freifunk-Franken",
 				"timestamp": "2015-05-05"
@@ -310,7 +339,7 @@
 			"feeds": [{
 				"name": "Kalender",
 				"category": "ics",
-				"url": "https://www.google.com/calendar/ical/ufdsc5q3a308snrrdjn752jato%40group.calendar.google.com/public/basic.ics" 
+				"url": "https://www.google.com/calendar/ical/ufdsc5q3a308snrrdjn752jato%40group.calendar.google.com/public/basic.ics"
 			}]
 		}
 	}, {
@@ -327,7 +356,10 @@
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.26586,10.97157,12",
 				"mapType" : "geographical"
-			}]
+			}],
+			"socialprojects": {
+				"number": 0
+			}
 		}
 	}, {
 		"id" : "hof",
@@ -346,7 +378,10 @@
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.30480,11.91450,13",
 				"mapType" : "geographical"
-			}]
+			}],
+			"socialprojects": {
+				"number": 0
+			}
 		}
 	}, {
 		"id" : "aschaffenburg",
@@ -362,7 +397,10 @@
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.99891,9.14921,12",
 				"mapType" : "geographical"
-			}]
+			}],
+			"socialprojects": {
+				"number": 1
+			}
 		}
 	}, {
 		"id" : "lauf_an_der_pegnitz",
@@ -384,6 +422,9 @@
 				"serviceDescription": "https://wiki.freifunk-franken.de/w/Dienste/CommunityNas",
 				"internalUri": "10.50.88.40"
 			}],
+			"socialprojects": {
+				"number": 3
+			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.50225,11.28038,13",
 				"mapType" : "geographical"
@@ -400,6 +441,9 @@
 				"city" : "Bad Reichenhall",
 				"lat" : 47.731667,
 				"lon" : 12.881389
+			},
+			"socialprojects": {
+				"number": 2
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=47.75779,12.79152,11",
