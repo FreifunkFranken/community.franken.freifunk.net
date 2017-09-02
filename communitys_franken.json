@@ -49,8 +49,8 @@
 					"docs": "https://wiki.freifunk-franken.de/w/Portal:Firmware"
 				},
 				"routing": [
-					"batman-adv",
-					"OLSR"
+					"Babel",
+					"batman-adv"
 				],
 				"updatemode": [
 					"manual"
@@ -277,7 +277,7 @@
 			}
 		}
 	}, {
-		"id" : "forchheim",
+		"id" : "ebermannstadt",
 		"radius" : 15,
 		"data" : {
 			"name" : "Freifunk Ebermannstadt",
@@ -303,6 +303,30 @@
 				"timestamp": "2015-04-13",
 				"url": "http://www.infranken.de/regional/forchheim/Die-Ebermannstadter-Feuerwehr-hat-freies-Wlan;art216,1014706"
 			}]
+		}
+	}, {
+		"id" : "forchheim",
+		"radius" : 15,
+		"data" : {
+			"name" : "Freifunk Forchheim",
+			"url" : "https://wiki.freifunk-franken.de/w/Hoods/Forchheim",
+			"metacommunity" : "Freifunk Franken",
+			"location" : {
+				"city" : "Forchheim",
+				"lat" : 49.72011,
+				"lon" : 11.05789
+			},
+			"contact" : {
+				"email" : "fragen@freifunk-franken.de",
+				"facebook": "https://www.facebook.com/FreifunkFranken/"
+			},
+			"nodeMaps" : [{
+				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.72011,11.05789,13",
+				"mapType" : "geographical"
+			}],
+			"socialprojects": {
+				"number": 2
+			},
 		}
 	}, {
 		"id" : "bamberg",
