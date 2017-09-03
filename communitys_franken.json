@@ -316,17 +316,13 @@
 				"lat" : 49.72011,
 				"lon" : 11.05789
 			},
-			"contact" : {
-				"email" : "fragen@freifunk-franken.de",
-				"facebook": "https://www.facebook.com/FreifunkFranken/"
-			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.72011,11.05789,13",
 				"mapType" : "geographical"
 			}],
 			"socialprojects": {
 				"number": 2
-			},
+			}
 		}
 	}, {
 		"id" : "bamberg",
