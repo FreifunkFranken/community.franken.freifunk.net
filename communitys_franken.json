@@ -30,14 +30,6 @@
 				"irc": "irc://irc.freenode.net/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
 			},
-			"support": {
-				"donations": {
-					"campaigns": [{
-						"provider": "betterplace",
-						"projectid": "14713"
-					}]
-				}
-			},
 			"socialprojects": {
 				"website": "https://wiki.freifunk-franken.de/w/FreifunkFuerFluechtlinksunterkuenfte",
 				"contact": "fragen@freifunk-franken.de"
