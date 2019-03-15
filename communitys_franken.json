@@ -52,6 +52,12 @@
 					"vpninternational"
 				]
 			},
+			"feeds": {
+				"name": "Freifunk Franken News",
+				"category": "blog",
+				"type": "RSS",
+				"url": "https://news.freifunk-franken.de/category/news/feed/"
+			},
 			"api" : "0.4.14"
 		}
 	},
