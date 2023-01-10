@@ -27,7 +27,7 @@
 				"facebook" : "https://www.facebook.com/FreifunkFranken/",
 				"ml" : "https://lists.freifunk.net/mailman/listinfo/franken-freifunk.net/",
 				"phone" : "+49 9101 7018607",
-				"irc": "irc://irc.freenode.net/#freifunk-franken",
+				"irc": "irc://irc.libera.chat/#freifunk-franken",
 				"twitter" : "@FreifunkFranken"
 			},
 			"socialprojects": {
@@ -37,8 +37,8 @@
 			"techDetails" : {
 				"firmware" : {
 					"name" : "Freifunk-Franken Firmware",
-					"url" : "https://dev.freifunk-franken.de/firmware/",
-					"docs": "https://wiki.freifunk-franken.de/w/Portal:Firmware"
+					"url" : "https://git.freifunk-franken.de/freifunk-franken/firmware",
+					"docs": "https://docs.freifunk-franken.de/"
 				},
 				"routing": [
 					"Babel",
@@ -60,7 +60,7 @@
 					"url": "https://news.freifunk-franken.de/category/news/feed/"
 				}
 			],
-			"api" : "0.4.14"
+			"api" : "0.5.2"
 		}
 	},
 
@@ -72,28 +72,29 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Nürnberg",
-				"lat" : 49.451719442437,
-				"lon" : 11.073559012306,
+				"geoCode": {
+					"lat": 49.451719442437,
+					"lon": 11.073559012306
+				},
 				"address": {
-					"Name": "Coworking Nürnberg",
-					"Street": "Josephsplatz ",
-					"Zipcode": "90403"
+					"name": "Coworking Nürnberg",
+					"street": "Josephsplatz ",
+					"zipcode": "90403"
 				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.44916,11.08332,13",
 				"mapType" : "geographical"
 			}],
-			"networks": {
-				"ipv4": [{
-					"network": "10.50.40.0/21"
-				}]
+			"techDetails": {
+				"networks": {
+					"ipv4": [
+						{
+							"network": "10.50.40.0/21"
+						}
+					]
+				}
 			},
-			"services": [{
-				"serviceName": "jabber.pm-ib.de",
-				"serviceDescription": "Jabber-Server",
-				"internalUri": "10.50.40.98"
-			}],
 			"socialprojects": {
 				"number": 3
 			},
@@ -116,23 +117,24 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Fürth",
-				"lat" : 49.47833,
-				"lon" : 10.99027
+				"geoCode": {
+					"lat": 49.47833,
+					"lon": 10.99027
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.48067,10.98418,14",
 				"mapType" : "geographical"
 			}],
-			"networks": {
-				"ipv4": [{
-					"network": "10.50.32.0/21"
-				}]
+			"techDetails": {
+				"networks": {
+					"ipv4": [
+						{
+							"network": "10.50.32.0/21"
+						}
+					]
+				}
 			},
-			"services": [{
-				"serviceName": "MicroNAS",
-				"serviceDescription": "anonymous FTP (10GB)",
-				"internalUri": "ftp://anonymous@10.50.32.100"
-			}],
 			"socialprojects": {
 				"number": 3
 			},
@@ -151,12 +153,14 @@
 			"metacommunity" : "Freifunk Franken",
 			"location": {
 				"city": "Haßfurt",
-				"lat": 50.0263024,
-				"lon": 10.5156375,
+				"geoCode": {
+					"lat": 50.0263024,
+					"lon": 10.5156375
+				},
 				"address": {
-					"Name": "Meehaeusle",
-					"Street": "Am Hafen 6",
-					"Zipcode": "97437"
+					"name": "Meehaeusle",
+					"street": "Am Hafen 6",
+					"zipcode": "97437"
 				}
 			},
 			"nodeMaps" : [{
@@ -166,10 +170,14 @@
 			"contact" : {
 				"facebook" : "https://www.facebook.com/freifunkhassberge/"
 			},
-			"networks": {
-				"ipv4": [{
-					"network": "10.50.56.0/22"
-				}]
+			"techDetails": {
+				"networks": {
+					"ipv4": [
+						{
+							"network": "10.50.56.0/22"
+						}
+					]
+				}
 			},
 			"services": [{
 				"serviceName": "Webserver und owncloud im Test",
@@ -204,17 +212,23 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Erlangen",
-				"lat" : 49.6005981,
-				"lon" : 11.0019221
+				"geoCode": {
+					"lat": 49.6005981,
+					"lon": 11.0019221
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.59786,11.00581,14",
 				"mapType" : "geographical"
 			}],
-			"networks": {
-				"ipv4": [{
-					"network": "10.50.64.0/21"
-				}]
+			"techDetails": {
+				"networks": {
+					"ipv4": [
+						{
+							"network": "10.50.64.0/21"
+						}
+					]
+				}
 			},
 			"socialprojects": {
 				"number": 9
@@ -233,24 +247,27 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Würzburg",
-				"lat" : 49.79688,
-				"lon" : 9.93489
+				"geoCode": {
+					"lat": 49.79688,
+					"lon": 9.93489
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.77694,9.92769,13",
 				"mapType" : "geographical"
 			}],
-			"contact" : {
-				"facebook" : "https://www.facebook.com/pages/Freifunk-W%C3%BCrzburg/1551181611834107"
-			},
-			"networks": {
-				"ipv4": [{
-					"network": "10.50.72.0/21"
-				}]
+			"techDetails": {
+				"networks": {
+					"ipv4": [
+						{
+							"network": "10.50.72.0/21"
+						}
+					]
+				}
 			},
 			"socialprojects": {
 				"number": 2,
-				"email": "burkard.fuchs@stadt.wuerzburg.de"
+				"contact": "burkard.fuchs@stadt.wuerzburg.de"
 			},
 			"timeline": [{
 				"description": "20 Router an die Piratenpartei Würzburg übergeben",
@@ -265,8 +282,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Crailsheim",
-				"lat" : 49.134722,
-				"lon" : 10.070556
+				"geoCode": {
+					"lat": 49.134722,
+					"lon": 10.070556
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.13304,10.07652,14",
@@ -285,8 +304,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Ebermannstadt",
-				"lat" : 49.779167,
-				"lon" : 11.184722
+				"geoCode": {
+					"lat": 49.779167,
+					"lon": 11.184722
+				}
 			},
 			"contact" : {
 				"email" : "kontakt@freifunk-ebs.de"
@@ -313,8 +334,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Forchheim",
-				"lat" : 49.72011,
-				"lon" : 11.05789
+				"geoCode": {
+					"lat": 49.72011,
+					"lon": 11.05789
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.72011,11.05789,13",
@@ -333,8 +356,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Bamberg",
-				"lat" : 49.891667,
-				"lon" : 10.8916672
+				"geoCode": {
+					"lat": 49.891667,
+					"lon": 10.8916672
+				}
 			},
 			"contact" : {
 				"email" : "kontakt@freifunk-bamberg.de",
@@ -344,10 +369,14 @@
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.90304,10.89483,13",
 				"mapType" : "geographical"
 			}],
-			"networks": {
-				"ipv4": [{
-					"network": "10.50.60.0/22"
-				}]
+			"techDetails": {
+				"networks": {
+					"ipv4": [
+						{
+							"network": "10.50.60.0/22"
+						}
+					]
+				}
 			},
 			"socialprojects": {
 				"number": 4
@@ -370,8 +399,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Coburg",
-				"lat" : 50.266667,
-				"lon" : 10.966667
+				"geoCode": {
+					"lat": 50.266667,
+					"lon": 10.966667
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.26586,10.97157,12",
@@ -392,8 +423,10 @@
 			},
 			"location" : {
 				"city" : "Hof",
-				"lat" : 50.321944,
-				"lon" : 11.918889
+				"geoCode": {
+					"lat": 50.321944,
+					"lon": 11.918889
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=50.30480,11.91450,13",
@@ -411,8 +444,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Aschaffenburg",
-				"lat" : 49.976703,
-				"lon" : 9.147747
+				"geoCode": {
+					"lat": 49.976703,
+					"lon": 9.147747
+				}
 			},
 			"nodeMaps" : [{
 				"url" : "https://monitoring.freifunk-franken.de/map?mapcenter=49.99891,9.14921,12",
@@ -430,8 +465,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Lauf an der Pegnitz",
-				"lat" : 49.510278,
-				"lon" : 11.277222
+				"geoCode": {
+					"lat": 49.510278,
+					"lon": 11.277222
+				}
 			},
 			"contact" : {
 				"email" : "freifunk@scheese.de",
@@ -459,8 +496,10 @@
 			"metacommunity" : "Freifunk Franken",
 			"location" : {
 				"city" : "Bad Reichenhall",
-				"lat" : 47.731667,
-				"lon" : 12.881389
+				"geoCode": {
+					"lat": 47.731667,
+					"lon": 12.881389
+				}
 			},
 			"socialprojects": {
 				"number": 2

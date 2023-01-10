@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # Copyright 2016, Steffen Pankratz.
 # SPDX-License-Identifier: AGPL-3
@@ -18,7 +18,7 @@ def get_json_data_from_url(url):
 
 
 def get_json_data_from_file(file):
-    with open(file, 'r') as json_file:
+    with open(file, 'r', encoding='utf-8') as json_file:
         return json.load(json_file)
 
 
@@ -55,9 +55,10 @@ def merge(a, b, path=None):
 
 def get_router_count_by_community(routers, community):
     router_count_by_community = 0
-    point_y = dict()
-    point_y['lat'] = radians(float(community['data']['location']['lat']))
-    point_y['lon'] = radians(float(community['data']['location']['lon']))
+    point_y = {
+        'lat': radians(float(community['data']['location']['geoCode']['lat'])),
+        'lon': radians(float(community['data']['location']['geoCode']['lon']))
+    }
     for router in routers:
         if get_distance_in_km(router, point_y) < community['radius']:
             router_count_by_community += 1
@@ -85,17 +86,18 @@ def update_community_files(nodelist_url, communities_file, output_dir):
         community['data']['state']['lastchange'] = datetime.datetime.utcnow() \
                                                            .isoformat() + 'Z'
         with open(os.path.join(output_dir,
-                               community['id'] + '.json'), 'w') as json_file:
+                               community['id'] + '.json'),
+                  'w', encoding='utf-8') as json_file:
             json.dump(community['data'], json_file, indent=4, sort_keys=True,
                       ensure_ascii=False)
 
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        exit('Please specify a directory for the community files.')
-    output_directory = sys.argv[1]
-    if not os.path.exists(output_directory):
-        os.mkdir(output_directory)
+        sys.exit('Please specify a output directory for the community files.')
+    OUTPUT_DIRECTORY = sys.argv[1]
+    if not os.path.exists(OUTPUT_DIRECTORY):
+        os.mkdir(OUTPUT_DIRECTORY)
     update_community_files(
         'https://monitoring.freifunk-franken.de/api/nodelist',
-        'communitys_franken.json', output_directory)
+        'communitys_franken.json', OUTPUT_DIRECTORY)
