@@ -194,9 +194,9 @@
 				"timestamp": "2014-12-19",
 				"url": "https://pad.freifunk.net/p/Planung-Ha%C3%9Fberge"
 			}, {
-				"description": "Haßfurter Tagblatt: Freies Internet in der Haßfurter City",
+				"description": "Main-Post: Freies Internet in der Haßfurter City",
 				"timestamp": "2015-04-29",
-				"url": "http://www.hassfurter-tagblatt.de/lokales/aktuelles/art2824,297551"
+				"url": "https://www.mainpost.de/regional/hassberge/freies-internet-in-der-hassfurter-city-art-9840654"
 			}],
 			"feeds": [{
 				"name": "Kalender",
@@ -322,7 +322,7 @@
 			"timeline": [{
 				"description": "inFranken.de: Die Ebermannstadter Feuerwehr hat freies Wlan",
 				"timestamp": "2015-04-13",
-				"url": "http://www.infranken.de/regional/forchheim/Die-Ebermannstadter-Feuerwehr-hat-freies-Wlan;art216,1014706"
+				"url": "https://www.infranken.de/lk/forchheim/die-ebermannstadter-feuerwehr-hat-freies-wlan-art-1014706"
 			}]
 		}
 	}, {
@@ -419,7 +419,7 @@
 			"name" : "Freifunk Landkreis Hof",
 			"metacommunity" : "Freifunk Franken",
 			"contact" : {
-				"ml" : "https://ml06.ispgateway.de/mailman/listinfo/freifunk-hof_mailingliste.wir-sind-hofer.de/"
+				"ml" : "https://ml-cgn06.ispgateway.de/mailman/listinfo/freifunk-hof_mailingliste.wir-sind-hofer.de"
 			},
 			"location" : {
 				"city" : "Hof",
